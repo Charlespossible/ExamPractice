@@ -48,6 +48,7 @@ const Exam: React.FC = () => {
   return (
     <div className="p-6 bg-gray-100 min-h-screen">
       <h1 className="text-3xl font-bold text-center mb-6">Choose Your Exam</h1>
+      <hr className="border-b-2 border-[#97c966] mt-8 mb-12 w-10 mx-auto"></hr>
       {/* Exams */}
       <div className="flex flex-wrap justify-center gap-4">
         {exams.map((exam) => (
@@ -69,6 +70,7 @@ const Exam: React.FC = () => {
           <h2 className="text-xl font-bold text-center mb-4">
             Subjects for {selectedExam}
           </h2>
+          <hr className="border-b-2 border-[#97c966] mt-8 mb-12 w-10 mx-auto"></hr>
           <div className="flex flex-wrap justify-center gap-4">
             {exams
               .find((exam) => exam.name === selectedExam)
@@ -93,6 +95,7 @@ const Exam: React.FC = () => {
           <h3 className="text-xl font-bold text-center mb-4">
             {selectedSubject} Past Questions
           </h3>
+          <hr className="border-b-2 border-[#97c966] mt-8 mb-12 w-10 mx-auto"></hr>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             {selectedYears.map((year) => (
               <div
@@ -104,9 +107,9 @@ const Exam: React.FC = () => {
               </div>
             ))}
           </div>
+
         </div>
       )}
-
       <div className="mt-6 ">
         <hr className="border-b-2 border-[#97c966] mt-8 mb-16 w-96 mx-auto"></hr>
       </div>
