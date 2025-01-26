@@ -1,9 +1,15 @@
 import React from 'react'
-import PricingTable from '../components/pricingTable'
+import PricingTable from '../components/PricingTable'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const Pricing: React.FC = () => {
   return (
-    <div><PricingTable /></div>
+    <div>
+      <Navbar />
+      <PricingTable />
+      <Footer />
+    </div>
   )
 }
 

@@ -36,38 +36,44 @@ const ContactUs: React.FC = () => {
       <h1 className="text-4xl font-bold text-gray-800 mb-10 text-center">
         Contact Us
       </h1>
-      <hr className="border-b-4 border-[#97c966] mt-2 mb-10 w-2/12 mx-auto" ></hr>
+      <hr className="border-b-2 border-[#97c966] mt-2 mb-10 w-2/12 mx-auto" ></hr>
 
       {/* Contact Rows */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl mb-10">
         {/* Phone Numbers */}
         <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center justify-center text-center">
           <h2 className="text-xl font-bold text-gray-800 mb-2">Phone Numbers</h2>
-          <p className="text-gray-600">+1 (123) 456-7890</p>
-          <p className="text-gray-600">+44 20 7946 0958</p>
+          <hr className="border-b-2 border-[#97c966] mt-2 mb-5 w-4 mx-auto" ></hr>
+          <p className="text-gray-600">+234 080 456 7890</p>
+          <p className="text-gray-600">+234 090 7946 0958</p>
         </div>
 
         {/* Email */}
         <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center justify-center text-center">
           <h2 className="text-xl font-bold text-gray-800 mb-2">Email</h2>
-          <p className="text-gray-600">contact@yourdomain.com</p>
-          <p className="text-gray-600">support@yourdomain.com</p>
+          <hr className="border-b-2 border-[#97c966] mt-2 mb-5 w-4 mx-auto" ></hr>
+          <p className="text-gray-600">contact@edumart.com</p>
+          <p className="text-gray-600">support@edumart.com</p>
         </div>
 
         {/* Social Media Handles */}
         <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center justify-center text-center">
           <h2 className="text-xl font-bold text-gray-800 mb-2">Social Media</h2>
-          <p className="text-gray-600">@YourCompany (Twitter)</p>
-          <p className="text-gray-600">/YourCompany (Facebook)</p>
-          <p className="text-gray-600">@YourCompany (Instagram)</p>
+          <hr className="border-b-2 border-[#97c966] mt-2 mb-5 w-4 mx-auto" ></hr>
+          <p className="text-gray-600">@Edumart (Twitter)</p>
+          <p className="text-gray-600">/Edumart (Facebook)</p>
+          <p className="text-gray-600">@Edumart (Instagram)</p>
         </div>
       </div>
 
+      <hr className="border-b-2 border-[#97c966] mt-2 mb-10 w-96 mx-auto" ></hr>
+
       {/* Contact Form */}
       <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-2xl">
-        <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-          Send Us a Message
-        </h2>
+        <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
+        We would love to hear from you.
+        </h3>
+        <hr className="border-b-2 border-[#97c966] mt-2 mb-5 w-10 mx-auto" ></hr>
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Name Input */}
           <div>

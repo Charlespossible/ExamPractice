@@ -1,11 +1,14 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { FooterLink, SocialLink } from '../types/footer';
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import EdumartLogo from '../assets/images/EdumartLogo.png';
 
 const footerLinks: FooterLink[] = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Exams', href: '/exams' },
+  { label: 'Pricing', href: '/pricing' },
   { label: 'LeaderBoard', href: '/leaderboard' },
   { label: 'Register', href: '/register' },
   { label: 'Login', href: '/login' },
@@ -29,7 +32,9 @@ const Footer: React.FC = () => {
         <div className="flex flex-wrap justify-between items-center mb-6">
           {/* Brand Info */}
           <div className="w-full md:w-1/3 text-center md:text-left mb-6 md:mb-0">
-            <h1 className="text-2xl font-bold">Edumart CBT</h1>
+          <NavLink to="/" className="flex items-center">
+          <img src={EdumartLogo} alt="Project Logo" className="h-11 w-auto object-contain" />
+        </NavLink>
             <p className="mt-2 text-sm text-white">
               Your trusted platform for exam preparation.
             </p>
@@ -42,7 +47,7 @@ const Footer: React.FC = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sm text-white hover:text-white transition"
+                    className="text-white hover:text-[#78846f] transition"
                   >
                     {link.label}
                   </a>
@@ -72,7 +77,7 @@ const Footer: React.FC = () => {
 
         {/* Footer Bottom */}
         <div className="border-t border-white pt-6 text-center">
-          <p className="text-sm text-white font-bold text-lg">
+          <p className="text-white font-bold text-lg">
             &copy; {currentYear} Edummart CBT. All rights reserved.
           </p>
         </div>
